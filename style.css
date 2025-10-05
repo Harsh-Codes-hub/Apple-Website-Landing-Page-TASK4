@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "SFPro";
+  src: url("./fonts/sf-pro-display_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("./fonts/sf-pro-display_semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("./fonts/sf-pro-display_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("./fonts/sf-pro-text_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("./fonts/sf-pro-text_semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --blue: #0077ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: "SFPro";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--black);
+    position: relative;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--white);
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 10px;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+ul * {
+    color: var(--black);
+}
+
+#logo, #cart, #search {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-image: url("./hero_iphone_17_pro__bknyzxfk2agi_large.jpg");
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+}
+
+.upper-box {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.upper-box h1 {
+    font-size: 50px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.upper-box p {
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.btn-group {
+    margin-top: 10px;
+}
+
+.btn-group button {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: var(--blue) 1px solid;
+}
+
+#learn {
+    background-color: var(--blue);
+}
+
+#buy {
+    background-color: transparent;
+    color: var(--blue);
+}
