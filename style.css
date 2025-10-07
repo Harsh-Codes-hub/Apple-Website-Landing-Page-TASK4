@@ -81,7 +81,7 @@ header {
 header ul {
     display: flex;
     list-style-type: none;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 100;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,7 @@ ul * {
 .main {
     height: 100%;
     width: 100%;
-    background-image: url("./hero_iphone_17_pro__bknyzxfk2agi_large.jpg");
+    background-image: url("./hero_iphone_17_pro__bknyzxfk2agi_large.webp");
     background-size: cover;
     background-position: center;
     /* position: relative; */
@@ -109,8 +109,12 @@ ul * {
 .upper-box {
     width: fit-content;
     margin: 0 auto;
-    padding-top: 100px;
-    text-align: center;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
 }
 
 .upper-box h1 {
@@ -126,6 +130,11 @@ ul * {
 
 .btn-group {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 80%;
 }
 
 .btn-group button {
@@ -137,9 +146,15 @@ ul * {
 
 #learn {
     background-color: var(--blue);
+    transition: scale .3s ease-in-out;
 }
 
 #buy {
     background-color: transparent;
     color: var(--blue);
+    transition: scale .3s ease-in-out;
+}
+
+#learn:hover, #buy:hover {
+    scale: 1.1;
 }
